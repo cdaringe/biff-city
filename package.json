@@ -1,0 +1,29 @@
+{
+  "name": "biff-city",
+  "description": "dummy package for dummy peoples",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "cdaringe <christopher.dieringer@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "gh-pages": "^1.0.0",
+    "husky": "^0.13.3",
+    "jsdoc": "^3.4.3",
+    "minami": "^1.2.3",
+    "npm-run-all": "^4.0.2",
+    "shizam": "^0.0.11",
+    "standard": "^10.0.2",
+    "tape": "^4.6.3"
+  },
+  "scripts": {
+    "test": "ava",
+    "lint": "standard",
+    "preversion": "git checkout master && git pull",
+    "docs:build": "mkdir -p docs && jsdoc -c .jsdoc.json src/",
+    "docs:clean": "rm -rf docs",
+    "docs:deploy": "gh-pages -d docs",
+    "postpublish": "run-s docs:clean docs:build docs:deploy docs:clean",
+    "precommit": "run-s lint"
+  }
+}
