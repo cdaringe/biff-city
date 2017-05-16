@@ -1,8 +1,12 @@
 /**
  * @module biff-city
+ * @description biff all of the things
  */
 
 var bc = {
+  /**
+   * @param {string} arg
+   */
   biffCity (arg) {
     return '[BIFF CITY]: ' + (arg || 'b!')
   },
