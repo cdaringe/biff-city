@@ -1,7 +1,7 @@
 {
   "name": "biff-city",
   "description": "dummy package for dummy peoples",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "src/index.js",
   "author": "cdaringe <christopher.dieringer@gmail.com>",
   "license": "MIT",
