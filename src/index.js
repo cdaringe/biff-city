@@ -1,3 +1,7 @@
+/**
+ * @module biff-city
+ */
+
 var bc = {
   biffCity (arg) {
     return '[BIFF CITY]: ' + (arg || 'b!')
